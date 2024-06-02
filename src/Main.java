@@ -17,7 +17,6 @@ public class Main {
         if (!confirmPassword.equals(password)) {
             throw new WrongPasswordException();
         }
-
     }
 
     public static void main(String[] args) {
@@ -30,6 +29,5 @@ public class Main {
         } catch (WrongLoginException | WrongPasswordException e) {
             System.out.println("Проверка не пройдена!");
         }
-
     }
 }
